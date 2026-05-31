@@ -1,7 +1,7 @@
 # Hangman Project
 ## 1.What is Hangman?
 Hangman is a guessing game in C#, developed by 
-* [Petar Petrov](https://github.com/Peshi2312) (Tester,Documentation)
+* [Petar Petrov](https://github.com/Peshi2312) (Tester, Documentation)
 * [Maxim Bikov](https://github.com/MaximProjects08/) (code)
 * [Stefan Ivanov](https://github.com/Necr0Lancer) (Presentation)
 * [Petko Marinov](https://github.com/PetkoMarinov19) (Leader)
