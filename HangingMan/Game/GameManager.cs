@@ -50,7 +50,7 @@ namespace HangingMan.Game
 
             Console.WriteLine();
 
-            char character = Console.ReadKey().KeyChar;
+            char character = char.ToLower(Console.ReadKey().KeyChar);
 
             if (selectedWord.Contains(character))
             {
@@ -141,7 +141,7 @@ namespace HangingMan.Game
             else
             {
                 if (stats.useColors) Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("You should choose only Y(Yes) or N(No)!");
+                Console.WriteLine("\nYou should choose only Y(Yes) or N(No)!");
                 if (stats.useColors) Console.ForegroundColor = ConsoleColor.White;
                 TryAgainPrompt();
             }

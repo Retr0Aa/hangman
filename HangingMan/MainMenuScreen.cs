@@ -87,8 +87,7 @@ namespace HangingMan
                     Console.WriteLine(opt);
                 }
 
-                Console.BackgroundColor = ConsoleColor.Black;
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.ResetColor();
 
                 Console.WriteLine("----------");
             }
@@ -139,7 +138,7 @@ namespace HangingMan
                     case 2:
                         // Use Colors
                         stats.useColors = !stats.useColors;
-                        StatsLoader.ToggleColors(!stats.useColors);
+                        StatsLoader.ToggleColors(stats.useColors);
                         RedrawMenu();
                         return;
                     case 3:

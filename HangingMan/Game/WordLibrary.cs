@@ -11,7 +11,18 @@ namespace HangingMan.Game
     {
         public static string[] ReadWordsFromFile()
         {
-            return File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "words.txt"));
+            try
+            {
+                return File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "words.txt"));
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("Error reading words from file: " + e.Message);
+                
+                Environment.Exit(1);
+                
+                return null;
+            }
         }
     }
 }

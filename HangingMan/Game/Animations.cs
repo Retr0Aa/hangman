@@ -599,7 +599,7 @@ namespace HangingMan.Game
                 if (stats.useColors)
                     Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(frame);
-                Thread.Sleep(10);
+                Thread.Sleep(80);
             }
         }
     };
